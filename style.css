@@ -85,9 +85,7 @@ nav a {
 
     background-position: center;
 
-    background-size: contain;
-
-    opacity: 1;
+    background-size: cover; /* 🔥 ВАЖНО */
 
     z-index: 0;
 
