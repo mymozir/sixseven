@@ -12,6 +12,19 @@ html, body {
     overflow-x: hidden;
 }
 
+/* ================= BODY ================= */
+
+body {
+
+    background: #ECE3D2;
+
+    color: #4A6644;
+
+    font-family: "JetBrains Mono", "Fira Code", monospace;
+
+    padding-top: 70px; /* фикс под navbar */
+}
+
 /* ================= NAVBAR ================= */
 
 header {
@@ -30,6 +43,8 @@ header {
     z-index: 1000;
 
     background: rgba(198, 111, 128, 0.95);
+
+    transition: 0.4s;
 }
 
 nav {
@@ -58,17 +73,17 @@ nav a {
 
     position: relative;
 
-    height: calc(100svh - 70px);
+    min-height: calc(100svh - 70px);
 
     display: flex;
 
     justify-content: center;
 
-    align-items: flex-start;
+    align-items: flex-start; /* 🔥 ВАЖНО: убрали центр */
 
     text-align: center;
 
-    padding-top: 20px;
+    padding-top: 80px;
 
     overflow: hidden;
 }
@@ -278,8 +293,8 @@ footer a:hover {
     }
 
     .hero {
-        height: calc(100svh - 70px);
-        padding-top: 10px;
+        min-height: calc(100svh - 70px);
+        padding-top: 40px;
     }
 
     .hero-text h1 {
@@ -291,10 +306,19 @@ footer a:hover {
         padding: 0 20px;
     }
 
+    .contents {
+        padding: 40px 20px;
+    }
+
     .carousel-section {
         flex-direction: column;
         padding: 60px 20px;
         gap: 30px;
+    }
+
+    .photos {
+        gap: 10px;
+        justify-content: center;
     }
 
     .photo {
@@ -305,12 +329,17 @@ footer a:hover {
         width: 160px;
     }
 
-    .arrow {
-        display: none !important;
-    }
-
     .description {
         text-align: center;
         max-width: 90%;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .arrow {
+        display: none !important;
     }
 }
