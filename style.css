@@ -13,7 +13,11 @@ body {
     color: #4A6644;
 
     font-family: "JetBrains Mono", "Fira Code", monospace;
-
+    
+body {
+    overflow-x: hidden;
+}
+    
 }
 
 /* ================= NAVBAR ================= */
