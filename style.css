@@ -22,8 +22,7 @@ body {
 
     font-family: "JetBrains Mono", "Fira Code", monospace;
 
-    /* ВАЖНО: компенсация fixed navbar */
-    padding-top: 70px;
+    padding-top: 70px; /* фикс под navbar */
 }
 
 /* ================= NAVBAR ================= */
@@ -46,11 +45,6 @@ header {
     background: rgba(198, 111, 128, 0.95);
 
     transition: 0.4s;
-}
-
-header.transparent {
-    background: rgba(198, 111, 128, 0.25);
-    backdrop-filter: blur(10px);
 }
 
 nav {
@@ -79,15 +73,17 @@ nav a {
 
     position: relative;
 
-    min-height: calc(100vh - 70px);
+    min-height: calc(100svh - 70px);
 
     display: flex;
 
     justify-content: center;
 
-    align-items: center;
+    align-items: flex-start; /* 🔥 ВАЖНО: убрали центр */
 
     text-align: center;
+
+    padding-top: 80px;
 
     overflow: hidden;
 }
@@ -296,6 +292,11 @@ footer a:hover {
         padding: 0 10px;
     }
 
+    .hero {
+        min-height: calc(100svh - 70px);
+        padding-top: 40px;
+    }
+
     .hero-text h1 {
         font-size: 40px;
     }
@@ -303,10 +304,6 @@ footer a:hover {
     .hero-text p {
         font-size: 16px;
         padding: 0 20px;
-    }
-
-    .hero {
-        min-height: calc(100svh - 70px);
     }
 
     .contents {
