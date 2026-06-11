@@ -349,6 +349,20 @@ footer a:hover {
         flex-wrap: wrap;
         gap: 10px;
     }
+
+    .hero {
+        min-height: 100svh; 
+        padding-top: 60px;
+    }
+
+    .contents {
+        padding: 40px 20px;
+    }
+
+    .arrow {
+        display: none;
+    }
+
 }
 
 html {
