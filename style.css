@@ -224,7 +224,7 @@ nav a {
 }
 
 .photo:hover {
-    transform: scale(0.9);
+    transform: scale(0.92);
 }
 
 .photo.active:hover {
